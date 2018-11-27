@@ -1,0 +1,116 @@
+//===========================================
+// -Home Page start
+//===========================================
+
+.product-container{
+	margin-top: -200px;
+}
+
+.product{
+	width: 80%;
+	margin: 0 auto;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
+	
+	.product-image-section{
+		width: 40%;
+		position: relative;
+		background-color: #fff;
+		// display: inline-block;
+		float: left;
+		
+		img {
+			position: relative;
+			top: 0;
+		}
+	}
+	.product-img {
+		background-color: #00d2ff;
+		background-size: calc(100% - 7em);
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: inline-block;
+		-webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+		clip-path: polygon(0 0, 0% 100%, 100% 0);
+	}
+	
+	.product-detail{
+		float: right;
+		width: 50%;
+		height: 100%;
+		padding: 0 rem(45);
+		
+		h5{
+			font-family: 'Montserrat', sans-serif;
+			font-size: rem(20);
+			margin-bottom: 0;
+		}
+		
+		.rating{
+			font-size: rem(12);
+			color: #787878;
+			i{
+				color: #f5e13d;
+				font-size: rem(14);
+				position: relative;
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+			
+			:nth-child(5){
+				color: #787878;
+			}
+		}
+		
+		.detail-tab{
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				border-bottom: 1px solid #a0a0a0;
+
+				li{
+					display: inline-block;
+					padding: rem(8) 0;
+					margin: 0 rem(20);
+					color: #a0a0a0;
+					font-family: 'Raleway', sans-serif;
+					font-size: rem(14);
+					font-weight: bold;
+					position: relative;
+
+				}
+
+				:nth-child(1){
+					margin-left: 0;
+				}
+			}
+
+			.tab-descrip{
+				font-size: rem(16);
+				font-family: 'Raleway', sans-serif;
+				line-height: 1.5;
+			}
+		}
+	}
+	
+}
+
+.tab-title{
+	&:hover {
+		cursor: pointer;
+		
+	}
+}
+
+
+
+//===========================================
+// -Home Page end
+//===========================================

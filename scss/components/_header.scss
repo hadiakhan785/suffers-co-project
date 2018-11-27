@@ -1,0 +1,86 @@
+//===========================================
+	// -Header start
+//===========================================
+header{
+	height: rem(700);
+	position: relative;
+
+	.top-navigation{
+		padding: rem(30) 0;
+
+		.brand, .navbar, .follow-links{
+			display: inline-block;
+		}
+
+		.follow-links-item{
+			display: inline-block;
+			margin: rem(4);
+
+			a{
+				display: inline-block;
+				text-decoration: none;
+				color: #000000;
+				font-size: rem(25);
+
+				&:hover{
+					color: #035880;
+				}
+			}
+		}
+
+		.slogan {
+			font-family: 'Playfair Display', serif;
+			margin-top: rem(150);
+			font-style: italic;
+			
+			h2{
+				font-size: rem(50);
+				margin: 0;
+				font-weight: 400;
+			}
+
+			h4{
+				color: #fff;
+				font-size: rem(25);
+				margin: 0;
+				font-weight: 400;
+
+			}
+		}
+	}
+
+	.bg-img{
+		position: absolute;
+		top: 0;
+		z-index: -3;
+		background-image: url('../images/header-img.jpg');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+	}
+	
+	.layout-full{
+		background-color: rgba(0, 0, 0, 0.1);
+		position: absolute;
+		top: 0;
+		z-index: -2;
+		height: 100%;
+		width: 100%;
+	}
+	
+	.layout-half {
+		background: linear-gradient(to top, #fff 1%, transparent );
+		position: absolute;
+		top: 0;
+		z-index: -1;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+
+//===========================================
+	// -Header end
+//===========================================
