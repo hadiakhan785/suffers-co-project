@@ -11,6 +11,33 @@
     cursor: not-allowed;
   }
 }
+
+.buy-btn{
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;			
+  background-color: $primary-1;
+  font-weight: bold;
+  font-size: rem(14);
+  border: 1px solid $primary-1;
+  padding: rem(14) rem(25);
+  letter-spacing: 2px;  
+}
+
+.intro-cancel-btn{
+  background: transparent;
+  border: none;
+  font-size: rem(18);
+}
+
+.play-btn{
+  background: transparent;
+  color: $white;
+  font-size: rem(100);
+  border: none;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20%;
+}
 //===========================================
     // -Buttons end
 //===========================================

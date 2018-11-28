@@ -378,6 +378,12 @@ th {
   height: 0;
   clear: both; }
 
+.zoom-select {
+  border: 3px solid #00b0ff !important; }
+
+.margin-top {
+  margin-top: 3.125rem; }
+
 .btn {
   font-weight: bold;
   text-align: center;
@@ -385,6 +391,30 @@ th {
   border-radius: 5px; }
   .btn[disabled], .btn.disabled {
     cursor: not-allowed; }
+
+.buy-btn {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #00b0ff;
+  font-weight: bold;
+  font-size: 0.875rem;
+  border: 1px solid #00b0ff;
+  padding: 0.875rem 1.5625rem;
+  letter-spacing: 2px; }
+
+.intro-cancel-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.125rem; }
+
+.play-btn {
+  background: transparent;
+  color: #fff;
+  font-size: 6.25rem;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20%; }
 
 html, body {
   font-family: "Roboto", sans-serif;
@@ -494,7 +524,7 @@ header {
           color: #035880; }
     header .top-navigation .slogan {
       font-family: 'Playfair Display', serif;
-      margin-top: 9.375rem;
+      margin-top: 5rem;
       font-style: italic; }
       header .top-navigation .slogan h2 {
         font-size: 3.125rem;
@@ -511,22 +541,7 @@ header {
     z-index: -3;
     background-image: url("../images/header-img.jpg");
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100%; }
-  header .layout-full {
-    background-color: rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 0;
-    z-index: -2;
-    height: 100%;
-    width: 100%; }
-  header .layout-half {
-    background: linear-gradient(to top, #fff 1%, transparent);
-    position: absolute;
-    top: 0;
-    z-index: -1;
     height: 100%;
     width: 100%; }
 
@@ -559,14 +574,14 @@ header {
   -webkit-box-shadow: 0px 0px 41px -11px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 41px -11px rgba(0, 0, 0, 0.75); }
   .product .product-image-section {
-    width: 40%;
+    width: 45%;
     position: relative;
     background-color: #fff;
     float: left; }
     .product .product-image-section img {
       position: relative;
       top: 0; }
-  .product .product-img {
+  .product .product-img-bg {
     background-color: #00d2ff;
     background-size: calc(100% - 7em);
     position: absolute;
@@ -577,11 +592,37 @@ header {
     display: inline-block;
     -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
     clip-path: polygon(0 0, 0% 100%, 100% 0); }
+  .product .zoom-img-container {
+    position: absolute;
+    right: 0;
+    top: 9.375rem;
+    margin-right: -3.4375rem; }
+    .product .zoom-img-container .img {
+      height: 4.375rem;
+      width: 4.375rem;
+      background-position: bottom;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0.375rem;
+      border: 1px solid #cccccc;
+      position: relative; }
+      .product .zoom-img-container .img:hover {
+        cursor: pointer; }
+    .product .zoom-img-container .img-1 {
+      background-image: url("../images/board-zoom-1.jpg"); }
+    .product .zoom-img-container .img-2 {
+      background-image: url("../images/board-zoom-2.jpg"); }
+    .product .zoom-img-container .img-3 {
+      background-image: url("../images/board-zoom-3.jpg"); }
+    .product .zoom-img-container .img-4 {
+      background-image: url("../images/board-zoom-4.jpg"); }
   .product .product-detail {
     float: right;
-    width: 50%;
+    width: 40%;
     height: 100%;
-    padding: 0 2.8125rem; }
+    padding: 0 3.125rem;
+    margin: 0 0.3125rem;
+    position: relative; }
     .product .product-detail h5 {
       font-family: 'Montserrat', sans-serif;
       font-size: 1.25rem;
@@ -597,6 +638,25 @@ header {
         cursor: pointer; }
       .product .product-detail .rating :nth-child(5) {
         color: #787878; }
+    .product .product-detail .product-arrow {
+      color: #fff;
+      position: absolute;
+      right: 0;
+      top: 1.25rem;
+      margin-right: -2.1875rem; }
+      .product .product-detail .product-arrow span {
+        background-color: #f5e13d;
+        padding: 0.5rem; }
+    .product .product-detail .product-number {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.875rem;
+      padding: 0.625rem;
+      position: absolute;
+      right: 0;
+      top: 3rem;
+      margin-right: -0.375rem; }
     .product .product-detail .detail-tab ul {
       margin: 0;
       padding: 0;
@@ -616,9 +676,165 @@ header {
     .product .product-detail .detail-tab .tab-descrip {
       font-size: 1rem;
       font-family: 'Raleway', sans-serif;
-      line-height: 1.5; }
+      line-height: 1.5;
+      color: #787878;
+      font-weight: 400;
+      margin: 1.75rem 0;
+      padding-right: 0.625rem; }
+    .product .product-detail .price {
+      display: inline-block;
+      color: #000000;
+      font-weight: bold;
+      font-size: 1.5rem;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0 1.5625rem;
+      margin-left: 0; }
+    .product .product-detail .all-products-link {
+      margin-top: 3.125rem; }
+      .product .product-detail .all-products-link a {
+        color: #00b0ff;
+        font-family: 'Montserrat', sans-serif; }
 
 .tab-title:hover {
   cursor: pointer; }
+
+.about-container {
+  margin-top: 18.75rem;
+  height: 40.625rem;
+  width: 100%;
+  position: relative; }
+  .about-container .about-bg-img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url("../images/img-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat; }
+  .about-container .about-bg-img-layout {
+    background: linear-gradient(to top, #1a1a1a 1%, transparent 99%);
+    height: 100%;
+    width: 100%; }
+  .about-container .about-us {
+    width: 50%;
+    background-color: #fff;
+    margin-top: -21.875rem;
+    display: inline-block; }
+  .about-container .intro {
+    width: 50%;
+    float: right;
+    text-align: center;
+    margin: 1.875rem; }
+    .about-container .intro h5 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.125rem;
+      font-weight: 400;
+      letter-spacing: 2px; }
+    .about-container .intro p {
+      padding: 0 3.125rem;
+      font-family: "Playfair Display", serif;
+      font-size: 1.375rem;
+      font-style: italic; }
+  .about-container .video {
+    height: 18.75rem;
+    width: 31.25rem;
+    background-image: url("../images/img-3.jpg");
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    margin-left: 5.625rem;
+    margin-top: -6.25rem; }
+
+.team-container {
+  margin-top: 31.25rem;
+  margin-bottom: 31.25rem; }
+  .team-container .arrow {
+    float: left;
+    margin-top: 9.375rem;
+    color: #4059ff;
+    font-size: 0.875rem;
+    background-color: #fff;
+    border-radius: 1000px;
+    -webkit-box-shadow: 0px 0px 46px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 46px -10px rgba(0, 0, 0, 0.75);
+    padding: 1rem;
+    font-weight: bolder; }
+    .team-container .arrow:hover {
+      background-color: #4059ff;
+      color: #fff;
+      cursor: pointer; }
+  .team-container .left-arrow {
+    margin-right: 1.875rem; }
+  .team-container .right-arrow {
+    margin-left: 1.875rem; }
+  .team-container .team-member {
+    padding: 1.875rem;
+    height: 15.625rem;
+    width: 12.5rem;
+    text-align: center;
+    background-color: white;
+    float: left;
+    -webkit-box-shadow: 0px 0px 46px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 46px -10px rgba(0, 0, 0, 0.75); }
+    .team-container .team-member .member-img-container .member-img {
+      height: 6.25rem;
+      width: 6.25rem;
+      border-radius: 1000px;
+      margin: 0 auto;
+      border: 2px solid transparent; }
+    .team-container .team-member .member-info .member-name {
+      font-size: 1.125rem;
+      color: #00b0ff;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      margin-bottom: 0; }
+    .team-container .team-member .member-info p {
+      font-family: "Raleway", sans-serif;
+      margin: 0;
+      color: #8c8c8c; }
+    .team-container .team-member .member-info .zig-zag {
+      display: block;
+      margin: 1rem;
+      color: black;
+      font-weight: bolder; }
+    .team-container .team-member .member-1 {
+      background-image: url("../images/slider-img-1.jpg");
+      background-position: top 358px right 198px; }
+    .team-container .team-member .member-2 {
+      background-image: url("../images/slider-img-2.jpg");
+      background-position: right; }
+    .team-container .team-member .member-3 {
+      background-image: url("../images/slider-img-3.jpg");
+      background-position: top 407px right 159px; }
+    .team-container .team-member .member-4 {
+      background-image: url("../images/slider-img-4.jpg");
+      background-position: top 263px right 176px; }
+    .team-container .team-member:hover {
+      background-color: #00b0ff;
+      cursor: pointer; }
+      .team-container .team-member:hover .member-img {
+        border-color: #fff; }
+      .team-container .team-member:hover .member-info * {
+        color: #fff; }
+      .team-container .team-member:hover .member-info .zig-zag {
+        color: #0022ff; }
+  .team-container .trans {
+    transform: scale(1.1); }
+
+.update {
+  height: 21.5625rem;
+  width: 16.875rem;
+  display: inline-block;
+  margin: 1.5625rem; }
+  .update .update-img {
+    width: 100%;
+    height: 60%; }
+  .update .img-1 {
+    background-image: url("../images/update-img.jpg"); }
+  .update .img-2 {
+    background-image: url("../images/update-img-2.jpg"); }
+  .update .img-3 {
+    background-image: url("../images/update-img-3.jpg"); }
 
 /*# sourceMappingURL=style.css.map */

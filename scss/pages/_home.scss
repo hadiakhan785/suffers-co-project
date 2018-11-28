@@ -2,6 +2,8 @@
 // -Home Page start
 //===========================================
 
+
+// product container start
 .product-container{
 	margin-top: -200px;
 }
@@ -13,11 +15,11 @@
 	-webkit-box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
 	
+	// image section
 	.product-image-section{
-		width: 40%;
+		width: 45%;
 		position: relative;
 		background-color: #fff;
-		// display: inline-block;
 		float: left;
 		
 		img {
@@ -25,7 +27,7 @@
 			top: 0;
 		}
 	}
-	.product-img {
+	.product-img-bg {
 		background-color: #00d2ff;
 		background-size: calc(100% - 7em);
 		position: absolute;
@@ -38,11 +40,55 @@
 		clip-path: polygon(0 0, 0% 100%, 100% 0);
 	}
 	
+	.zoom-img-container{
+		position: absolute;
+		right: 0;
+		top: rem(150);
+		margin-right: rem(-55);
+		
+		.img{
+			height: rem(70);
+			width: rem(70);
+			background-position: bottom;
+			background-size: cover;
+			background-repeat: no-repeat;
+			margin: rem(6);
+			border: 1px solid $border-color;
+			position: relative;
+			
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		
+		.img-1{
+			background-image: url('../images/board-zoom-1.jpg');
+		}
+		
+		.img-2{
+			background-image: url('../images/board-zoom-2.jpg');
+		}
+		
+		.img-3{
+			background-image: url('../images/board-zoom-3.jpg');
+		}
+		
+		.img-4{
+			background-image: url('../images/board-zoom-4.jpg');
+		}
+		
+	}
+	
+	
+	
+	// detail section
 	.product-detail{
 		float: right;
-		width: 50%;
+		width: 40%;
 		height: 100%;
-		padding: 0 rem(45);
+		padding: 0 rem(50);
+		margin: 0 rem(5);
+		position: relative;
 		
 		h5{
 			font-family: 'Montserrat', sans-serif;
@@ -54,11 +100,11 @@
 			font-size: rem(12);
 			color: #787878;
 			i{
-				color: #f5e13d;
+				color: $secondary-1;
 				font-size: rem(14);
 				position: relative;
 			}
-
+			
 			&:hover {
 				cursor: pointer;
 			}
@@ -68,13 +114,39 @@
 			}
 		}
 		
+		// side arrow
+		.product-arrow{
+			color: $white;
+			position: absolute;
+			right: 0;
+			top: rem(20);
+			margin-right: rem(-35);
+			
+			span {
+				background-color: $secondary-1;
+				padding: rem(8);
+			}
+		}
+		
+		.product-number{
+			background-color: $black;
+			color: $white;
+			font-family: 'Montserrat', sans-serif;
+			font-size: rem(14);
+			padding: rem(10);
+			position: absolute;
+			right: 0;
+			top: rem(48);
+			margin-right: rem(-6);
+		}
+		
 		.detail-tab{
 			ul{
 				margin: 0;
 				padding: 0;
 				list-style-type: none;
 				border-bottom: 1px solid #a0a0a0;
-
+				
 				li{
 					display: inline-block;
 					padding: rem(8) 0;
@@ -84,18 +156,42 @@
 					font-size: rem(14);
 					font-weight: bold;
 					position: relative;
-
+					
 				}
-
+				
 				:nth-child(1){
 					margin-left: 0;
 				}
 			}
-
+			
 			.tab-descrip{
 				font-size: rem(16);
 				font-family: 'Raleway', sans-serif;
 				line-height: 1.5;
+				color: #787878;
+				font-weight: 400;
+				margin: rem(28) 0;
+				padding-right: rem(10);
+			}
+		}
+		
+		.price{
+			display: inline-block;
+			color: #000000;
+			font-weight: bold;
+			font-size: rem(24);
+			font-family: 'Montserrat', sans-serif;
+			margin: 0 rem(25);
+			margin-left: 0;
+		}
+		
+		.all-products-link{
+			margin-top: rem(50);	
+			// margin-bottom: rem(10); LATER	
+			
+			a{
+				color: $primary-1;
+				font-family: 'Montserrat', sans-serif;	
 			}
 		}
 	}
@@ -109,7 +205,229 @@
 	}
 }
 
+// product container end
 
+// about section start
+
+.about-container{
+	margin-top: rem(300);
+	// margin-bottom: rem(300);
+	height: rem(650);
+	width: 100%;
+	position: relative;
+	
+	.about-bg-img {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		background-image: url('../images/img-2.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	
+	.about-bg-img-layout{
+		background: linear-gradient(to top, #{lighten($black, 10%)} 1% , transparent 99%);
+		height: 100%;
+		width: 100%;
+	}
+	
+	.about-us{
+		width: 50%;
+		background-color: $white;
+		margin-top: rem(-350);
+		display: inline-block;
+	}
+	
+	.intro{
+		width: 50%;
+		float: right;
+		text-align: center;
+		margin: rem(30);
+		
+		
+		h5{
+			font-family: $montserrat;
+			font-size: rem(18);
+			font-weight: 400;
+			letter-spacing: 2px;
+		}
+		
+		p{
+			padding: 0 rem(50);
+			font-family: $playfair;
+			font-size: rem(22);
+			font-style: italic;
+		}
+	}
+	
+	.video{
+		height: rem(300);
+		width: rem(500);
+		background-image: url('../images/img-3.jpg');
+		background-position: center;
+		background-size: cover;
+		display: inline-block;
+		margin-left: rem(90);
+		margin-top: rem(-100);
+	}
+}
+// about section end
+
+
+// team section start
+.team-container{
+	margin-top: rem(500);
+	margin-bottom: rem(500);
+	
+	.arrow{
+		float: left;
+		margin-top: rem(150);
+		color: #4059ff;
+		font-size: rem(14);
+		background-color: $white;
+		border-radius: 1000px;
+		-webkit-box-shadow: 0px 0px 46px -10px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 46px -10px rgba(0,0,0,0.75);
+		padding: rem(16);
+		font-weight: bolder;
+
+		&:hover{
+			background-color: #4059ff;
+			color: $white;
+			cursor: pointer;
+		}
+	}
+
+	.left-arrow{
+		margin-right: rem(30);
+	}
+
+	.right-arrow {
+		margin-left: rem(30);
+	}
+	
+	.team-member{
+		padding: rem(30);
+		height: rem(250);
+		width: rem(200);
+		text-align: center;
+		background-color: white;
+		float: left;
+		-webkit-box-shadow: 0px 0px 46px -10px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 46px -10px rgba(0,0,0,0.75);
+		
+		.member-img-container{
+			
+			.member-img{
+				height: rem(100);
+				width: rem(100);
+				border-radius: 1000px;
+				margin: 0 auto;
+				border: 2px solid transparent;
+			}
+		}
+
+		.member-info{
+
+			.member-name{
+				font-size: rem(18);
+				color: $primary-1;
+				font-family: $montserrat;
+				font-weight: 400;
+				margin-bottom: 0;
+			}
+
+			p{
+				font-family: $raleway;
+				margin: 0;
+				color: #8c8c8c;
+			}
+
+			.zig-zag {
+				display: block;
+				margin: rem(16);
+				color: darken( #8c8c8c, 80%);
+				font-weight: bolder;
+			}
+
+
+		}
+
+		.member-1{
+			background-image: url('../images/slider-img-1.jpg');
+			background-position: top 358px right 198px;
+		}
+
+		.member-2{
+			background-image: url('../images/slider-img-2.jpg');
+			background-position: right;
+		}
+
+		.member-3 {
+			background-image: url('../images/slider-img-3.jpg');
+			background-position: top 407px right 159px;
+		}
+
+		.member-4 {
+			background-image: url('../images/slider-img-4.jpg');
+			background-position: top 263px right 176px;
+		}
+
+		// team member hover
+		&:hover {
+			background-color: $primary-1;
+			cursor: pointer;
+
+			.member-img{
+				border-color: $white;
+			}
+
+			.member-info{
+				* {
+					color: $white;
+				}
+
+				.zig-zag{
+					color: #0022ff;
+				}
+			}
+		}
+		
+	}
+
+	.trans {
+		transform: scale(1.1);
+	}
+}
+// team section end
+
+// Latest Update Section start
+.update{
+	height: rem(345);
+	width: rem(270);
+	display: inline-block;
+	margin: rem(25);
+
+	.update-img{
+		width: 100%;
+		height: 60%;
+	}
+
+	.img-1{
+		background-image: url('../images/update-img.jpg');
+	}
+
+	.img-2{
+		background-image: url('../images/update-img-2.jpg');
+	}
+
+	.img-3{
+		background-image: url('../images/update-img-3.jpg');
+	}
+}
+// Latest Update Section start
 
 //===========================================
 // -Home Page end

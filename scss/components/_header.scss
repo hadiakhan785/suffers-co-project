@@ -30,7 +30,7 @@ header{
 
 		.slogan {
 			font-family: 'Playfair Display', serif;
-			margin-top: rem(150);
+			margin-top: rem(80);
 			font-style: italic;
 			
 			h2{
@@ -55,29 +55,13 @@ header{
 		z-index: -3;
 		background-image: url('../images/header-img.jpg');
 		background-position: center;
-		background-size: cover;
+		// background-size: 100%;
 		background-repeat: no-repeat;
 		height: 100%;
 		width: 100%;
 	}
 	
-	.layout-full{
-		background-color: rgba(0, 0, 0, 0.1);
-		position: absolute;
-		top: 0;
-		z-index: -2;
-		height: 100%;
-		width: 100%;
-	}
-	
-	.layout-half {
-		background: linear-gradient(to top, #fff 1%, transparent );
-		position: absolute;
-		top: 0;
-		z-index: -1;
-		height: 100%;
-		width: 100%;
-	}
+
 }
 
 
