@@ -405,7 +405,9 @@ th {
 .intro-cancel-btn {
   background: transparent;
   border: none;
-  font-size: 1.125rem; }
+  font-size: 1.125rem;
+  margin: 0 auto;
+  display: block; }
 
 .play-btn {
   background: transparent;
@@ -414,7 +416,9 @@ th {
   border: none;
   display: block;
   margin: 0 auto;
-  padding-top: 20%; }
+  margin-top: 20%; }
+  .play-btn:focus {
+    outline: none; }
 
 html, body {
   font-family: "Roboto", sans-serif;
@@ -440,6 +444,14 @@ html, body {
 .active {
   color: #000000 !important;
   border-bottom: 2px solid #00b0ff; }
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0.75rem; }
 
 @font-face {
   font-family: 'suffers-co';
@@ -544,6 +556,87 @@ header {
     background-repeat: no-repeat;
     height: 100%;
     width: 100%; }
+
+footer .insta-link {
+  width: 50%;
+  height: 691px;
+  float: left; }
+  footer .insta-link .insta-gallery {
+    width: 100%;
+    height: 75%; }
+    footer .insta-link .insta-gallery .gallery-img {
+      width: 50%;
+      height: 50%;
+      background-position: center;
+      background-size: cover;
+      float: left; }
+    footer .insta-link .insta-gallery .gallery-img-1 {
+      background-image: url("../images/gallery-img-1.jpg"); }
+    footer .insta-link .insta-gallery .gallery-img-2 {
+      background-image: url("../images/gallery-img-2.jpg"); }
+    footer .insta-link .insta-gallery .gallery-img-3 {
+      background-image: url("../images/gallery-img-3.jpg"); }
+    footer .insta-link .insta-gallery .gallery-img-4 {
+      background-image: url("../images/gallery-img-4.jpg"); }
+  footer .insta-link .insta-follow-link {
+    background-color: #fff; }
+    footer .insta-link .insta-follow-link p a {
+      text-decoration: none;
+      color: #00b0ff;
+      font-size: 1.5rem;
+      font-weight: bold;
+      font-family: 'Roboto Condensed', sans-serif;
+      margin-right: 3.125rem; }
+      footer .insta-link .insta-follow-link p a i {
+        margin-right: 0.625rem; }
+footer .facebook-link {
+  height: 350px;
+  width: 440px;
+  background-image: url("../images/fb-bg.jpg");
+  background-size: cover;
+  margin-top: 3.125rem;
+  margin-left: 5rem;
+  float: left; }
+  footer .facebook-link img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5625rem;
+    margin-bottom: 1.25rem; }
+  footer .facebook-link .fb-page {
+    width: 75%;
+    height: 70%;
+    margin: 0 auto;
+    background-color: #fff; }
+    footer .facebook-link .fb-page .fb-page-cover {
+      height: 65%;
+      width: 100%;
+      background-image: url("../images/fb-page-img.jpg");
+      background-repeat: no-repeat; }
+    footer .facebook-link .fb-page .fb-followers {
+      -webkit-box-shadow: 0px 0px 46px -10px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 46px -10px rgba(0, 0, 0, 0.75);
+      margin: 0.3125rem;
+      padding: 0.3125rem;
+      padding-right: 0;
+      height: 25%; }
+      footer .facebook-link .fb-page .fb-followers p {
+        margin: 0;
+        font-size: 0.75rem; }
+      footer .facebook-link .fb-page .fb-followers .user-img {
+        margin: 0;
+        float: left; }
+
+.fb-page-name .page-dp {
+  float: left;
+  margin: 0; }
+.fb-page-name .fb-name {
+  float: left; }
+  .fb-page-name .fb-name a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600; }
+    .fb-page-name .fb-name a span {
+      font-size: 0.75rem; }
 
 .navbar {
   margin: 0 6.25rem; }
@@ -726,11 +819,6 @@ header {
     float: right;
     text-align: center;
     margin: 1.875rem; }
-    .about-container .intro h5 {
-      font-family: "Montserrat", sans-serif;
-      font-size: 1.125rem;
-      font-weight: 400;
-      letter-spacing: 2px; }
     .about-container .intro p {
       padding: 0 3.125rem;
       font-family: "Playfair Display", serif;
@@ -748,7 +836,7 @@ header {
 
 .team-container {
   margin-top: 31.25rem;
-  margin-bottom: 31.25rem; }
+  margin-bottom: 15.625rem; }
   .team-container .arrow {
     float: left;
     margin-top: 9.375rem;
@@ -822,19 +910,45 @@ header {
   .team-container .trans {
     transform: scale(1.1); }
 
-.update {
-  height: 21.5625rem;
-  width: 16.875rem;
-  display: inline-block;
-  margin: 1.5625rem; }
-  .update .update-img {
-    width: 100%;
-    height: 60%; }
-  .update .img-1 {
-    background-image: url("../images/update-img.jpg"); }
-  .update .img-2 {
-    background-image: url("../images/update-img-2.jpg"); }
-  .update .img-3 {
-    background-image: url("../images/update-img-3.jpg"); }
+.latest-update-container {
+  margin-bottom: 250px; }
+  .latest-update-container .update-wrapper-title {
+    text-align: center;
+    margin-bottom: 1.5625rem; }
+  .latest-update-container .update-wrapper {
+    margin: 0 auto;
+    width: 90%;
+    padding: 0 12%; }
+  .latest-update-container .update {
+    height: 21.5625rem;
+    max-width: 25%;
+    min-width: 20%;
+    display: inline-block;
+    margin: 1.25rem; }
+    .latest-update-container .update .update-img {
+      width: 100%;
+      height: 60%; }
+    .latest-update-container .update .img-1 {
+      background-image: url("../images/update-img.jpg"); }
+    .latest-update-container .update .img-2 {
+      background-image: url("../images/update-img-2.jpg"); }
+    .latest-update-container .update .img-3 {
+      background-image: url("../images/update-img-3.jpg"); }
+    .latest-update-container .update .update-description {
+      font-family: "Raleway", sans-serif;
+      color: #787878;
+      padding: 0 0.625rem;
+      font-size: 0.875rem; }
+    .latest-update-container .update:hover {
+      -webkit-box-shadow: 0px 0px 46px -10px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 46px -10px rgba(0, 0, 0, 0.75); }
+      .latest-update-container .update:hover .update-description {
+        color: #0022ff; }
+  .latest-update-container .update-further-posts {
+    display: block;
+    margin: 0 auto; }
+    .latest-update-container .update-further-posts a {
+      text-decoration: none;
+      color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
