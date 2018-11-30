@@ -1,5 +1,5 @@
 //===========================================
-    // -Buttons start
+// -Buttons start
 //===========================================
 
 .btn {
@@ -21,6 +21,12 @@
   border: 1px solid $primary-1;
   padding: rem(14) rem(25);
   letter-spacing: 2px;  
+
+  &:hover{
+    background-color: lighten($primary-1, 20%);
+    border-color: lighten($primary-1, 20%);
+    color: lighten($black, 30%);
+  }
 }
 
 .intro-cancel-btn{
@@ -29,7 +35,7 @@
   font-size: rem(18);
   margin: 0 auto;
   display: block;
-
+  
 }
 
 .play-btn{
@@ -40,11 +46,58 @@
   display: block;
   margin: 0 auto;
   margin-top: 20%;
-
+  
   &:focus {
     outline: none;
   }
 }
+
+.fb-btn{
+  font-size: rem(12);
+  font-weight: bold;
+  color: #4b4f56;
+  border: none;
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+  padding: rem(5);
+}
+
+.like-btn{
+  float: left;
+  margin-left: rem(16);
+  
+  
+  i {
+    color: #3a5897;
+    margin-right: rem(2);
+  }
+}
+
+.share-btn {
+  float: right;
+  margin-right: rem(16);
+  
+}
+
+
+.send{
+  color: $white;
+  background-color: $primary-1;
+  border: none;
+  border-radius: 1000px;
+  padding: rem(5) rem(8);
+  margin-bottom: rem(10);
+
+  i {
+    font-size: rem(12);
+  }
+
+  &:focus{
+    outline: none;
+  }
+}
+
+
 //===========================================
-    // -Buttons end
+// -Buttons end
 //===========================================

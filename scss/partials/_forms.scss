@@ -2,6 +2,19 @@
     // -Forms Start
 //===========================================
 
+.newsletter-form-inp{
+    border: none;
+    background-color: $black;
+    width: 80%;
+    color: $white;
+    padding: rem(10);
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
 
 //===========================================
     // -Forms end
