@@ -12,6 +12,12 @@
   }
 }
 
+.hamburger{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .buy-btn{
   color: #fff;
   font-family: 'Montserrat', sans-serif;			
@@ -35,7 +41,6 @@
   font-size: rem(18);
   margin: 0 auto;
   display: block;
-  
 }
 
 .play-btn{
@@ -71,11 +76,20 @@
     color: #3a5897;
     margin-right: rem(2);
   }
+
+  &:hover{
+    background-color: lighten(#4b4f56, 90%);
+  }
+  
 }
 
 .share-btn {
   float: right;
   margin-right: rem(16);
+
+  &:hover{
+    background-color: lighten(#4b4f56, 90%);
+  }
   
 }
 
@@ -94,6 +108,14 @@
 
   &:focus{
     outline: none;
+  }
+
+  &:hover{
+    background-color: lighten($primary-1, 10%);
+  }
+
+  &:active{
+    background-color: lighten($primary-1, 30%);
   }
 }
 

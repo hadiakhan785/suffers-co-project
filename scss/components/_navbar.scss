@@ -1,18 +1,28 @@
 //===========================================
-	// -Navbar start
+// -Navbar start
 //===========================================
 
 .navbar{
 	margin: 0 rem(100);
+	display: inline-block;
+
+	@include mq('xl', max){
+		margin: 0 rem(50);
+	}
+
+	@include mq('lg', max){
+		display: none;
+	}
+	
 	
 	ul{
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-
+		
 		li{
 			display: inline;
-
+			
 			a{
 				text-decoration: none;
 				color: #000000;
@@ -21,16 +31,80 @@
 				margin: rem(8);
 				font-size: rem(14);
 				font-family: 'Montserrat', sans-serif;
-
+				
 				&:hover{
-					background-color: #00b0ff;
+					background-color: $primary-1;
 					color: #fff;
+				}
+				
+				&:active{
+					background-color: lighten($primary-1, 40%);
+					color: $black;
 				}
 			}
 		}
 	}
+
 }
 
+.hamburger{
+	display: none;
+	background-color: $white;
+	border: 1px solid $black;
+	margin: rem(32);
+	
+	@include mq('lg', max){
+		display: block;
+	}
+}
+
+.collapse-nav{
+	background-color: $white;
+	width: 70%;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	visibility: hidden;
+	z-index: -4;
+	
+	
+	.collapse-navbar{
+		
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			
+			li{
+				a{
+					color: $primary-1;
+					text-decoration: none;
+					font-family: $montserrat;
+					display: block;
+					padding: rem(16) rem(25);
+					// border-bottom: 1px solid $primary-1;
+				}
+			}
+		}
+		
+		
+	}
+
+	.close-btn{
+		margin-top: rem(16);
+	}
+}
+
+@include mq('lg', max){
+	.navbar{
+		display: none;
+		
+	}
+}
+
+
+
 //===========================================
-	// -Navbar end
+// -Navbar end
 //===========================================

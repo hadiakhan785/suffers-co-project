@@ -7,8 +7,16 @@ header{
 
 	.top-navigation{
 		padding: rem(30) 0;
+		width: 100%;
+		z-index: 3;
+		top: 0;
 
-		.brand, .navbar, .follow-links{
+		.brand {
+			display: inline-block;
+		}
+
+
+		.follow-links{
 			display: inline-block;
 		}
 
@@ -28,27 +36,28 @@ header{
 			}
 		}
 
-		.slogan {
-			font-family: 'Playfair Display', serif;
-			margin-top: rem(80);
-			font-style: italic;
-			
-			h2{
-				font-size: rem(50);
-				margin: 0;
-				font-weight: 400;
-			}
-
-			h4{
-				color: #fff;
-				font-size: rem(25);
-				margin: 0;
-				font-weight: 400;
-
-			}
-		}
+		
 	}
 
+	.slogan {
+		font-family: 'Playfair Display', serif;
+		margin-top: rem(80);
+		font-style: italic;
+		
+		h2{
+			font-size: rem(50);
+			margin: 0;
+			font-weight: 400;
+		}
+
+		h4{
+			color: #fff;
+			font-size: rem(25);
+			margin: 0;
+			font-weight: 400;
+
+		}
+	}
 	.bg-img{
 		position: absolute;
 		top: 0;

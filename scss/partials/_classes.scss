@@ -23,6 +23,16 @@
 .margin-top{
 	margin-top: rem(50);
 }
+
+.fixed-top-nav{
+	position: fixed;
+	background-color: $white;
+	padding: rem(8)!important;
+}
+
+.full-height{
+	height: 100%;
+}
 //===========================================
 	// -Helper Classes end
 //===========================================

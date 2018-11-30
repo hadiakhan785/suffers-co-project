@@ -25,6 +25,12 @@ footer {
 					background-position: center;
 					background-size: cover;
 					float: left;
+					transition: all 0.6s ease-in-out;
+
+					&:hover{
+						transform: scale(1.1);
+						cursor: pointer;
+					}
 				}
 				
 				.gallery-img-1{
@@ -60,6 +66,10 @@ footer {
 						
 						i {
 							margin-right: rem(10);
+						}
+
+						&:hover{
+							text-decoration: underline;
 						}
 					}
 				}
@@ -134,6 +144,10 @@ footer {
 					span {
 						font-size: rem(12);
 					}
+
+					&:hover {
+						text-decoration: underline;
+					}
 				}
 			}
 		}
@@ -170,14 +184,27 @@ footer {
 					color: $secondary-1;
 
 				}
+
+				&:hover{
+					color: $secondary-1;
+				}
 			}
 
 			.left-links {
 				float: left;
+				margin-right: rem(62);
+				
+				i{
+					margin-right: rem(20);
+				}
 			}
 
 			.right-links{
 				float: left;
+
+				i{
+					margin-right: rem(20);
+				}
 			}
 		}
 

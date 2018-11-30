@@ -7,6 +7,9 @@
     <title>Suffers-co</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- animate css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
@@ -22,13 +25,17 @@
     <script src="js/script.js"></script>
 </head>
 
-<body>
+<body onload="init()">
     <!-- header start -->
     <header class="main-header">
 
         <!-- navigation -->
         <nav class="top-navigation">
             <div class="container">
+
+                <button class="hamburger" onclick="openNav()">
+                    <i class="fas fa-bars"></i>
+                </button>
 
                 <!-- Brand -->
                 <div class="brand">
@@ -90,15 +97,55 @@
                     </ul>
                 </div>
 
-                <div class="slogan text-center">
-                    <h2>Ride every waves as if it's your last</h2>
-                    <h4>We love the motion of the ocean</h4>
-                </div>
+
             </div>
         </nav>
 
+        <div class="slogan text-center">
+            <h2>Ride every waves as if it's your last</h2>
+            <h4>We love the motion of the ocean</h4>
+        </div>
+
         <!-- header img wih layouts -->
         <div class="bg-img">
+
+        </div>
+
+        <div class="collapse-nav animated faster">
+            <div class="close-btn">
+                <button class="intro-cancel-btn" onclick="closeNav()">
+                    <i class="icon-sc-cancel"></i>
+                </button>
+            </div>
+
+            <!-- navbar -->
+            <div class="collapse-navbar">
+                <ul>
+                    <li>
+                        <a href="#">BOARDS</a>
+                    </li>
+
+                    <li>
+                        <a href="#">ACCESSORIES</a>
+                    </li>
+
+                    <li>
+                        <a href="#">BLOG</a>
+                    </li>
+
+                    <li>
+                        <a href="#">TECHNOLOGY</a>
+                    </li>
+
+                    <li>
+                        <a href="#">TEAM</a>
+                    </li>
+
+                    <li>
+                        <a href="#">DEALERS</a>
+                    </li>
+                </ul>
+            </div>
 
         </div>
     </header>
@@ -486,7 +533,7 @@
                         <h4>Subscribe to our newsletter</h4>
                         <div class="form">
                             <i class="icon-sc-mail mail"></i>
-                            <input type="text" class="newsletter-form-inp" placeholder=" Your e-mail" >
+                            <input type="text" class="newsletter-form-inp" placeholder=" Your e-mail">
                             <button class="send">
                                 <i class="icon-sc-right-arrow"></i>
                             </button>
