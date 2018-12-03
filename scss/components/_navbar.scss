@@ -5,11 +5,11 @@
 .navbar{
 	margin: 0 rem(100);
 	display: inline-block;
-
+	
 	@include mq('xl', max){
 		margin: 0 rem(50);
 	}
-
+	
 	@include mq('lg', max){
 		display: none;
 	}
@@ -44,14 +44,12 @@
 			}
 		}
 	}
-
+	
 }
 
 .hamburger{
 	display: none;
-	background-color: $white;
-	border: 1px solid $black;
-	margin: rem(32);
+	margin-right: rem(32);
 	
 	@include mq('lg', max){
 		display: block;
@@ -59,8 +57,12 @@
 }
 
 .collapse-nav{
-	background-color: $white;
-	width: 70%;
+	background-color:#40C4FF;
+	// background-image: url('../images/surfing_wave-wide.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 95%;
 	position: fixed;
 	right: 0;
 	bottom: 0;
@@ -77,22 +79,69 @@
 			padding: 0;
 			
 			li{
+				border-bottom: 1px solid $black;
+
 				a{
-					color: $primary-1;
+					color: $black;
 					text-decoration: none;
 					font-family: $montserrat;
 					display: block;
 					padding: rem(16) rem(25);
-					// border-bottom: 1px solid $primary-1;
+					font-weight: 700;
+					margin: 0 rem(20);
+
+				}
+
+				&:nth-child(1){
+					background-color: #039BE5;
+				}
+
+				&:nth-child(2){
+					background-color: #03A9F4;
+				}
+
+				&:nth-child(3){
+					background-color: #29B6F6;
+				}
+
+				&:nth-child(4){
+					background-color: #4FC3F7;
+				}
+
+				&:nth-child(5){
+					background-color: #81D4FA;
+				}
+
+				&:nth-child(6){
+					background-color: #B3E5FC;
+				}
+
+				&:nth-child(7){
+					background-color: #E1F5FE;
 				}
 			}
+
+			
+
+
 		}
 		
 		
 	}
-
+	
 	.close-btn{
 		margin-top: rem(16);
+		margin-right: rem(32);
+		
+		
+		button {
+			float: right;
+			color: $black;
+			// background-color: $black;
+			// color: $white;
+			// padding: rem(6) rem(6);
+			// border-radius: 1000px;
+		}
 	}
 }
 

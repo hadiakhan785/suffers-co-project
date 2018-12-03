@@ -13,9 +13,20 @@
 }
 
 .hamburger{
-  position: absolute;
-  right: 0;
-  top: 0;
+  float: right;
+  border-radius: 50px;
+  // border: 1px solid $black;
+  border: none;
+  background-color: $black;
+  // background-color: transparent;
+  padding: 5px 8px;
+  color: $white;
+  -webkit-box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
+  
+  &:focus{
+    outline: none;
+  }
 }
 
 .buy-btn{
@@ -32,6 +43,10 @@
     background-color: lighten($primary-1, 20%);
     border-color: lighten($primary-1, 20%);
     color: lighten($black, 30%);
+  }
+
+  @include mq('sm', max){
+    padding: rem(10) rem(20);
   }
 }
 

@@ -2,18 +2,19 @@
 // -Global style start
 //=======================================================
 
-html, body{
-  max-width: 100%;
-  overflow-x: hidden;
-  height: 100%;
+// Default style start
+
+* {
+  box-sizing: border-box;
 }
 
-// Default style start
 
 html, body {
   font-family: $font-default;
   font-size: 16px;
   transition: 0.5ms;
+  max-width: 100%;
+  overflow-x: hidden;
 	
 	@include mq('sm', min) {
     font-size: 10px;

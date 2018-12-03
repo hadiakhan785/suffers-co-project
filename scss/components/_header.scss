@@ -1,44 +1,48 @@
 //===========================================
-	// -Header start
+// -Header start
 //===========================================
 header{
 	height: rem(700);
 	position: relative;
-
+	
 	.top-navigation{
-		padding: rem(30) 0;
+		padding: rem(30) rem(8);
 		width: 100%;
 		z-index: 3;
 		top: 0;
-
+		
 		.brand {
 			display: inline-block;
 		}
-
-
+		
+		
 		.follow-links{
 			display: inline-block;
-		}
 
+			@include mq('sm', max){
+				display: none;
+			}
+		}
+		
 		.follow-links-item{
 			display: inline-block;
 			margin: rem(4);
-
+			
 			a{
 				display: inline-block;
 				text-decoration: none;
 				color: #000000;
 				font-size: rem(25);
-
+				
 				&:hover{
 					color: #035880;
 				}
 			}
 		}
-
+		
 		
 	}
-
+	
 	.slogan {
 		font-family: 'Playfair Display', serif;
 		margin-top: rem(80);
@@ -48,14 +52,21 @@ header{
 			font-size: rem(50);
 			margin: 0;
 			font-weight: 400;
+			
+			@include mq('sm', max){
+				font-size: rem(30);
+			}
 		}
-
+		
 		h4{
 			color: #fff;
 			font-size: rem(25);
 			margin: 0;
 			font-weight: 400;
-
+			
+			@include mq('sm', max){
+				font-size: rem(16);
+			}
 		}
 	}
 	.bg-img{
@@ -70,10 +81,50 @@ header{
 		width: 100%;
 	}
 	
+	
+}
 
+.sticky-follow-links{
+	position: fixed;
+	top: 50%;
+	left: 0;
+	-webkit-box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
+	background-color: $white;
+	display: none;
+
+	@include mq('sm', max){
+		display: block;
+	}
+	
+	ul{
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+
+		.sticky-follow-links-item{
+			// display: inline-block;
+			margin: rem(4);
+			
+			a{
+				display: inline-block;
+				text-decoration: none;
+				color: #000000;
+				font-size: rem(25);
+				padding: rem(8);
+				
+				&:hover{
+					color: #035880;
+				}
+			}
+		}
+		
+	}
+	
 }
 
 
+
 //===========================================
-	// -Header end
+// -Header end
 //===========================================

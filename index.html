@@ -31,7 +31,7 @@
 
         <!-- navigation -->
         <nav class="top-navigation">
-            <div class="container">
+            <div class="container clearfix">
 
                 <button class="hamburger" onclick="openNav()">
                     <i class="fas fa-bars"></i>
@@ -112,7 +112,7 @@
         </div>
 
         <div class="collapse-nav animated faster">
-            <div class="close-btn">
+            <div class="close-btn clearfix">
                 <button class="intro-cancel-btn" onclick="closeNav()">
                     <i class="icon-sc-cancel"></i>
                 </button>
@@ -248,32 +248,38 @@
             </div>
 
             <!-- intro -->
-            <div class="about-us clearfix">
-                <div class="intro">
-                    <h5 class="title">WE ARE SUFFERS CO.</h5>
-                    <button id="cancel" class="intro-cancel-btn">
-                        <i class="icon-sc-cancel"></i>
-                    </button>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat.
-                    </p>
+            <div class="about-us-content clearfix">
+                <div class="about-us clearfix">
 
-                    <a href="#">Read more</a>
+                    <div class="intro">
+                        <h5 class="title">WE ARE SUFFERS CO.</h5>
+                        <button id="cancel" class="intro-cancel-btn">
+                            <i class="icon-sc-cancel"></i>
+                        </button>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi
+                            ut
+                            aliquip ex ea commodo consequat.
+                        </p>
+
+                        <a href="#">Read more</a>
+
+                    </div>
 
                 </div>
 
+                <!-- video -->
+                <div class="video">
+                    <button class="play-btn">
+                        <i class="icon-sc-play-circular-button"></i>
+                    </button>
+                </div>
             </div>
 
-            <!-- video -->
-            <div class="video">
-                <button class="play-btn">
-                    <i class="icon-sc-play-circular-button"></i>
-                </button>
-            </div>
         </div>
 
         <!-- about container end -->
@@ -548,6 +554,31 @@
         <!-- Bottom Footer End -->
     </footer>
     <!-- Footer end -->
+
+    <!-- sticky follow links start-->
+    <!-- Follow Links -->
+    <div class="sticky-follow-links">
+        <ul>
+            <li class="sticky-follow-links-item">
+                <a href="#">
+                    <i class="icon-sc-facebook-rounded-logo"></i>
+                </a>
+            </li>
+
+            <li class="sticky-follow-links-item">
+                <a href="#">
+                    <i class="icon-sc-instagram-logo"></i>
+                </a>
+            </li>
+
+            <li class="sticky-follow-links-item">
+                <a href="#">
+                    <i class="icon-sc-envelope-circle"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- sticky follow links start -->
 </body>
 
 </html>
