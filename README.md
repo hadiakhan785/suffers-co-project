@@ -1,16 +1,12 @@
 # README #
 
-### How do I get set up? ###
+### Languages and Tools ###
 
-* sass --watch scss/main.scss:css/style.css --style compressed --sourcemap=none
+* HTML (Structuring)
+* SCSS (Styling)
+* Javascript (Functionality)
+* With float
+* Swiper Library(For slider)
 
-### Contribution guidelines ###
-
-* Add these two in gitignore file
-
-* .sass-cache/
-* *.css.map
-
-### Who do I talk to? ###
-
-* ismailfarooq.com
+##
+You can visit site here: https://hadiakhan785.github.io/suffers-co-project/
